@@ -20,11 +20,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/components',
-    '~/plugins/composition-api',
-    '~/plugins/storyblok-rich-text-renderer',
-  ],
+  plugins: ['~/plugins/components', '~/plugins/composition-api', '~/plugins/storyblok-rich-text-renderer'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -43,7 +39,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: 'iJSm3AH9Zy7OZeQZV4JmZgtt',
+        accessToken: process.env.NUXT_ENV_STORYBLOK_API_KEY,
         cacheProvider: 'memory',
       },
     ],
@@ -54,4 +50,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+};
