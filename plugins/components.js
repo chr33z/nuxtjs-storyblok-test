@@ -19,6 +19,6 @@ Vue.component('article-teaser', ArticleTeaser);
 
 // Pano Components
 Vue.component('pano', Pano);
-Vue.component('pano_hotspot', PanoHotspot);
-Vue.component('pano_hotspot_image', PanoHotspotImage);
-Vue.component('pano_hotspot_text', PanoHotspotText);
+Vue.component('pano-hotspot', PanoHotspot);
+Vue.component('pano-hotspot-image', PanoHotspotImage);
+Vue.component('pano-hotspot-text', PanoHotspotText);

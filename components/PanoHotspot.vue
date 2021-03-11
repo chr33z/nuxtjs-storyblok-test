@@ -1,8 +1,17 @@
 <template>
-  <div v-editable="blok">
-    <!-- <component v-for="hotspot in blok.hotspots" :key="hotspot._uid" :blok="blok" :is="blok.component" /> -->
+  <div class="pano-hotspot" v-editable="blok">
+    <component v-for="blok in blok.content" :key="blok._uid" :blok="blok" :is="blok.component" />
   </div>
 </template>
+
+<style>
+.pano-hotspot {
+  width: 320px;
+  height: 240px;
+  background-color: white;
+  display: none;
+}
+</style>
 
 <script>
 export default {
@@ -13,7 +22,7 @@ export default {
     },
   },
   mounted() {
-    console.log('PanoHotspot', blok);
+    console.log(this.blok);
   },
 };
 </script>
