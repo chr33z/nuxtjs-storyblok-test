@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'nuxtjs-storyblok-test',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'de',
     },
     meta: [
       { charset: 'utf-8' },
@@ -49,5 +49,10 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    vendor: ['three'],
+  },
+  server: {
+    port: 3000,
+  },
 };

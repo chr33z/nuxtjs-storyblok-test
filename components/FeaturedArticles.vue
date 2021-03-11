@@ -32,8 +32,6 @@ export default Vue.extend({
         return this.blok.articles.includes(article.uuid);
       });
 
-      console.log(featuredArticles);
-
       // Enable the ordering of the article previews
       featuredArticles.sort((a: IArticle, b: IArticle) => {
         return this.blok.articles.indexOf(a.uuid) - this.blok.articles.indexOf(b.uuid);
